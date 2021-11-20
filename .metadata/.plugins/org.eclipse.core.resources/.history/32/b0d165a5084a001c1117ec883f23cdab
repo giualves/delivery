@@ -1,0 +1,5 @@
+package com.devweb.delivery.repository;
+
+public interface ItemRepository {
+
+}

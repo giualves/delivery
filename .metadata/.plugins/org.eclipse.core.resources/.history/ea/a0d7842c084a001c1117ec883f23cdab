@@ -1,0 +1,5 @@
+package com.devweb.delivery.entity;
+
+public class Item {
+
+}
