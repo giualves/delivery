@@ -7,10 +7,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HelloController {
 	
+	//  comentário de uma linha
+	/*
+	 * comentáario de múltiplas linhas...
+	 */
+	
 	@GetMapping("/hello")
 	@ResponseBody
 	public String hello() {
-		return "Hello Jovem";
+		return "Hello world!";
 	}
 
 }
