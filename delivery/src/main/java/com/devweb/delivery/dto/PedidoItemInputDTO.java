@@ -8,7 +8,7 @@ import lombok.Data;
 public class PedidoItemInputDTO {
 
     @NotBlank
-    private String prodUuid;
+    private String uuid;
 
     @NotBlank
     private Integer quantidade;

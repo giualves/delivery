@@ -6,5 +6,5 @@ import lombok.Data;
 public class ProdutoResumoDTO {
     private String uuid;
     private String nome;  
-    
+    private String preco;
 }

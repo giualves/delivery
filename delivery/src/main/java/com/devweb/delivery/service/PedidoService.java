@@ -80,7 +80,7 @@ public class PedidoService {
         ArrayList<PedidoItem> pedidoItems = new ArrayList<>();
         for (PedidoItemInputDTO pedidoItemInputDTO : pedidoInputDTO.getPedidoItem()) {
             PedidoItem pedidoItem = new PedidoItem();
-            pedidoItem.setProduto(produtoService.getProdutoByUuid(pedidoItemInputDTO.getProdUuid()));
+            pedidoItem.setProduto(produtoService.getProdutoByUuid(pedidoItemInputDTO.getUuid()));
             pedidoItem.setQuantidade(pedidoItemInputDTO.getQuantidade());
             pedidoItem.setPedido(ped);
             nTotalPedido = nTotalPedido + (pedidoItem.getProduto().getPreco().doubleValue() * pedidoItem.getQuantidade().doubleValue() );
